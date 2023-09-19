@@ -1,0 +1,118 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+li {
+  margin: 0 75 0 75;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+#aboutmelines {
+  border: none;
+  border-top: 1px solid white;
+  margin: 300px 0 0 0;
+}
+
+#colombiapic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#imagequeens {
+  
+  margin: 0 0 0 20;
+  float: right;
+  height: 300;
+}
+
+#familypic {
+  margin: 0 0 0 20;
+  float: right;
+  width: 400;
+  height: auto;
+}
+
+#tennispic {
+  width: 1000;
+  height: auto;
+}
+
+#mybutton {
+  text-align: center;
+}
+
+#mybutton button {
+  background-color: black; 
+  color: white; 
+  padding: 10px 10px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+#mybutton button:hover {
+  background-color: white; 
+  color: #000;
+}
+
+#tkepic {
+  width: 1000;
+  height: auto;
+}
+
+#topmenu {
+  background-color: #333;
+  text-align: center;
+  border: 10px;
+  border-color: black;
+  border-style: solid;
+}
