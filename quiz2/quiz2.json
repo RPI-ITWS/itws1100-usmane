@@ -1,0 +1,25 @@
+{
+    "songs" : [
+        {
+        "title" : "love",
+        "artist" : "kendrick",
+        "album_name" : "damn",
+        "cover_art" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDamn_%2528Kendrick_Lamar_album%2529&psig=AOvVaw1P61lizXIHU2GvM_7QZ3_F&ust=1698790739409000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNj-w7HonoIDFQAAAAAdAAAAABAE",
+        "copyright" : "2016"
+        },
+        {
+        "title" : "4:44",
+        "artist" : "jayz",
+        "album_name" : "4:44",
+        "cover_art" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F4%3A44&psig=AOvVaw2VWsSSj-o4tT8cWE8Gfh72&ust=1698790759120000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDh28LonoIDFQAAAAAdAAAAABAE",
+        "copyright" :"2017" 
+        },
+        {
+        "title" : "viva la vida",
+        "artist" : "coldplay",
+        "album_name" : "viva la vida or death and all his friends",
+        "cover_art" : "https://f4.bcbits.com/img/a1843192158_10.jpg",
+        "copyright" : "2009" 
+        },
+    ]
+}
