@@ -1,0 +1,40 @@
+{
+   "menuItem": [
+      {
+         "Lab#": "Lab 2",
+         "Title": "Resume",
+         "link": "Usmane-EmmanuelUsman-resume.html",
+         "Description": "I practiced HTML/CSS in class by developing a digital resume. Below you will find a link to the resume with details about me."
+      },
+      {
+         "Lab#": "Lab 3",
+         "Title": "Website",
+         "link": "../index.html",
+         "Description": "This website is another project I am currently working on in class. We went over Information Architecture to plan out how we are going to structure our website and display our information."
+      },
+      {
+         "Lab#": "Lab 4",
+         "Title": "RSS",
+         "link": "../index.html",
+         "Description": "I tried to develop an RSS feed using XML"
+      },
+      {
+         "Lab#": "Lab 4",
+         "Title": "ATOM",
+         "link": "../index.html",
+         "Description": "I tried to develop an ATOM feed using XML"
+      },
+      {
+         "Lab#": "Lab 5",
+         "Title": "JavaScript/HTML",
+         "link": "../index.html",
+         "Description": "I made a form with JavaScript events"
+      },
+      {
+         "Lab#": "Lab 6",
+         "Title": "Jquery",
+         "link": "../index.html",
+         "Description": "I did lab06"
+      }
+   ]
+}
