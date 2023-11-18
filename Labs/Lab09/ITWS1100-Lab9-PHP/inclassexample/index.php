@@ -1,6 +1,8 @@
 <?php
   include('includes/init.inc.php'); // include the DOCTYPE and opening tags
   include('includes/functions.inc.php'); // functions
+  error_reporting(E_ALL);
+  ini_set('display_errors', '1');
 ?>
 <title>PHP &amp; MySQL - ITWS</title>
 
