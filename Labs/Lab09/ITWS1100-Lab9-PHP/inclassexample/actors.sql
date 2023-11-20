@@ -3,11 +3,11 @@ CREATE TABLE `actors` (
    `actorid` int(10) unsigned NOT NULL AUTO_INCREMENT,
    `firstNames` varchar(100) NOT NULL,
    `lastName` varchar(100) NOT NULL,
-   `dob` DATE,
+   `dob` char(10) DEFAULT NULL,
    PRIMARY KEY (`actorid`)
 );
 -- insert data into the tables
-INSERT INTO movies
+INSERT INTO actors
 VALUES 
    (1, "Meryl", "Streep", "1949-06-22"),
    (2, "Robert", "De Niro", "1943-08-17"),
