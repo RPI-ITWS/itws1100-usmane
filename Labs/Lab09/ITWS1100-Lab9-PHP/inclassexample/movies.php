@@ -12,6 +12,8 @@
 
 <p>Build the movie forms and output here.</p>
 
+
+
 <?php include('includes/foot.inc.php'); 
   // footer info and closing tags
 ?>
