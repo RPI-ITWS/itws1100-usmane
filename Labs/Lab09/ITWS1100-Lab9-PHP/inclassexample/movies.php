@@ -39,21 +39,21 @@
     // Get the output and clean it for output on-screen.
     // First, let's get the output one param at a time.
     // Could also output escape with htmlentities()
-    $mid = htmlspecialchars(trim($_POST["movieid"]));
-    $tit = htmlspecialchars(trim($_POST["title"]));
-    $yr = htmlspecialchars(trim($_POST["year"]));
+    $movieid = htmlspecialchars(trim($_POST["movieid"]));
+    $title = htmlspecialchars(trim($_POST["title"]));
+    $year = htmlspecialchars(trim($_POST["year"]));
 
     $focusId = ''; // trap the first field that needs updating, better would be to save errors in an array
 
-    if ($mid == '') {
+    if ($movieid == '') {
       $errors .= '<li>movieid may not be blank</li>';
       if ($focusId == '') $focusId = '#movieid';
     }
-    if ($tit == '') {
+    if ($title == '') {
       $errors .= '<li>Title may not be blank</li>';
       if ($focusId == '') $focusId = '#title';
     }
-    if ($yr == '') {
+    if ($year == '') {
       $errors .= '<li>year may not be blank</li>';
       if ($focusId == '') $focusId = '#year';
     }
@@ -69,24 +69,24 @@
       echo '</script>';
     } else {
       if ($dbOk) {
-        // Let's trim the input for inserting into mysql
+        // Let's trim the input for inserting into MySQL
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
-        $movieForDb = trim($_POST["movieid"]);
+        $movieidForDb = trim($_POST["movieid"]);
         $titleForDb = trim($_POST["title"]);
         $yearForDb = trim($_POST["year"]);
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
-        $insQuery = "insert into movies (`movieid`,`title`,`year`) values(?,?,?)";
+        $insQuery = "INSERT INTO movies (`movieid`,`title`,`year`) VALUES (?,?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
-        $statement->bind_param("iss",$movieForDb,$titleForDb,$yearForDb);
+        $statement->bind_param("iss", $movieidForDb, $titleForDb, $yearForDb);
         // make it so:
         $statement->execute();
 
         // give the user some feedback
-        echo '<div class="messages"><h4>Success: ' . $statement->affected_rows . ' movie added to database.</h4>';
+        echo '<div class="messages"><h4>Success: ' . $statement->affected_rows . ' movie added to the database.</h4>';
         echo $movieid . ' ' . $title . ', made ' . $year . '</div>';
 
         // close the prepared statement obj
@@ -102,12 +102,12 @@
     <div class="formData">
 
       <label class="field" for="movieid">Movie(id):</label>
-      <div class="value"><input type="int" size="100" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
+      <div class="value"><input type="text" size="100" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
 
-      <label class="field" for="title">title:</label>
+      <label class="field" for="title">Title:</label>
       <div class="value"><input type="text" size="100" value="<?php if($havePost && $errors != '') { echo $title; } ?>" name="title" id="title"/></div>
 
-      <label class="field" for="year">year:</label>
+      <label class="field" for="year">Year:</label>
       <div class="value"><input type="text" size="10" maxlength="10" value="<?php if($havePost && $errors != '') { echo $year; } ?>" name="year" id="year"/> <em>yyyy</em></div>
 
       <input type="submit" value="save" id="save" name="save"/>
@@ -120,11 +120,11 @@
 <?php
   if ($dbOk) {
 
-    $query = 'select * from movies order by id';
+    $query = 'select * from movies order by movieid';
     $result = $db->query($query);
     $numRecords = $result->num_rows;
 
-    echo '<tr><th>movieid:</th><th>title:</th><th></th></tr>';
+    echo '<tr><th>Movie ID:</th><th>Title:</th><th>Year:</th><th></th></tr>';
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
       if ($i % 2 == 0) {
@@ -132,7 +132,7 @@
       } else {
         echo "\n".'<tr class="odd" id="movie-' . $record['movieid'] . '"><td>';
       }
-      echo htmlspecialchars($record['movieid']) . ', ';
+      echo htmlspecialchars($record['movieid']) . '</td><td>';
       echo htmlspecialchars($record['title']);
       echo '</td><td>';
       echo htmlspecialchars($record['year']);
@@ -151,11 +151,9 @@
     // Finally, let's close the database
     $db->close();
   }
-
 ?>
 </table>
 
 <?php include('includes/foot.inc.php');
   // footer info and closing tags
 ?>
-
