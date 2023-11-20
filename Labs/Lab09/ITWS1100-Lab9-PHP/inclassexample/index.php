@@ -95,7 +95,7 @@
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
-        $insQuery = "insert into actors (`last_name`,`first_names`,`dob`) values(?,?,?)";
+        $insQuery = "insert into actors (`lastName`,`firstNames`,`dob`) values(?,?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
         $statement->bind_param("sss",$lastNameForDb,$firstNamesForDb,$dobForDb);
@@ -137,7 +137,7 @@
 <?php
   if ($dbOk) {
 
-    $query = 'select * from actors order by last_name';
+    $query = 'select * from actors order by lastName';
     $result = $db->query($query);
     $numRecords = $result->num_rows;
 
