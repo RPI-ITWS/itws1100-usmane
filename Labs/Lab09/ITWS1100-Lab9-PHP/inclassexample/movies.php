@@ -102,10 +102,10 @@
     <div class="formData">
 
       <label class="field" for="movieid">Movie(id):</label>
-      <div class="value"><input type="text" size="100" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
+      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
 
       <label class="field" for="title">Title:</label>
-      <div class="value"><input type="text" size="100" value="<?php if($havePost && $errors != '') { echo $title; } ?>" name="title" id="title"/></div>
+      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $title; } ?>" name="title" id="title"/></div>
 
       <label class="field" for="year">Year:</label>
       <div class="value"><input type="text" size="10" maxlength="10" value="<?php if($havePost && $errors != '') { echo $year; } ?>" name="year" id="year"/> <em>yyyy</em></div>
