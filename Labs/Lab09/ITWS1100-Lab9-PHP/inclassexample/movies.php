@@ -101,7 +101,7 @@
   <fieldset>
     <div class="formData">
 
-      <label class="field" for="Movieid">Movie(id):</label>
+      <label class="field" for="movieid">Movie(id):</label>
       <div class="value"><input type="int" size="100" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
 
       <label class="field" for="title">title:</label>
