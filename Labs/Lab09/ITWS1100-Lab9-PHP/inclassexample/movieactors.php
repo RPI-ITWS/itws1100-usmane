@@ -90,21 +90,6 @@
   }
 ?>
 
-<h3>Add Movie Actor</h3>
-<form id="addForm" name="addForm" action="index.php" method="post" onsubmit="return validate(this);">
-  <fieldset>
-    <div class="formData">
-
-      <label class="field" for="movieid">Movie ID:</label>
-      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $movieid; } ?>" name="movieid" id="movieid"/></div>
-
-      <label class="field" for="actorid">Actor ID:</label>
-      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $actorid; } ?>" name="actorid" id="actorid"/></div>
-
-      <input type="submit" value="save" id="save" name="save"/>
-    </div>
-  </fieldset>
-</form>
 
 <h3>Movie Actors</h3>
 <table id="movieActorTable">
