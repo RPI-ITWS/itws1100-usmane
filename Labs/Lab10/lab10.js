@@ -1,55 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
     // Replace this URL with your actual RSS feed URL
     const rssFeedUrl = 'RSS.xml'; // Assuming RSS.xml is in the same directory as the HTML file
 
-    // Fetch the RSS feed
-    fetch(rssFeedUrl)
-        .then(response => response.text())
-        .then(xml => {
-            // Parse the XML response
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xml, 'application/xml');
+    $.ajax({
+        type: 'GET',
+        url: rssFeedUrl,
+        dataType: 'xml',
+        success: function(xml) {
+            var output = '<div>';
+            var channel = $(xml).find('channel');
+            var items = $(xml).find('item');
 
-            // Get the channel and items from the RSS feed
-            const channel = xmlDoc.querySelector('channel');
-            const items = xmlDoc.querySelectorAll('item');
+            output += '<h2>' + channel.find('title').text() + '</h2>';
+            output += '<p>' + channel.find('description').text() + '</p>';
+            output += '<a href="' + channel.find('link').text() + '">Visit Website</a>';
+            output += '<ul>';
 
-            // Get the RSS container
-            const rssContainer = document.getElementById('RSS');
-
-            // Create HTML elements to display the feed
-            const feedTitle = document.createElement('h2');
-            feedTitle.textContent = channel.querySelector('title').textContent;
-            rssContainer.appendChild(feedTitle);
-
-            const feedDescription = document.createElement('p');
-            feedDescription.textContent = channel.querySelector('description').textContent;
-            rssContainer.appendChild(feedDescription);
-
-            const feedLink = document.createElement('a');
-            feedLink.href = channel.querySelector('link').textContent;
-            feedLink.textContent = 'Visit Website';
-            rssContainer.appendChild(feedLink);
-
-            const feedItems = document.createElement('ul');
-            items.forEach(item => {
-                const listItem = document.createElement('li');
-                const itemTitle = document.createElement('h3');
-                const itemLink = document.createElement('a');
-                const itemDescription = document.createElement('p');
-
-                itemTitle.textContent = item.querySelector('title').textContent;
-                itemLink.href = item.querySelector('link').textContent;
-                itemLink.textContent = 'Read More';
-                itemDescription.textContent = item.querySelector('description').textContent;
-
-                listItem.appendChild(itemTitle);
-                listItem.appendChild(itemLink);
-                listItem.appendChild(itemDescription);
-                feedItems.appendChild(listItem);
+            items.each(function() {
+                var item = $(this);
+                output += '<hr>';
+                output += '<h3 class="centered">' + item.find('title').text() + '</h3>';
+                output += '<p class="centered">' + item.find('description').text() + '</p>';
+                output += '<div class="mybutton">';
+                output += '<a href="' + item.find('link').text() + '"><button type="button">Read More</button></a>';
+                output += '</div>';
             });
 
-            rssContainer.appendChild(feedItems);
-        })
-        .catch(error => console.error('Error fetching RSS feed:', error));
+            output += '</ul>';
+            output += '</div>';
+
+            $('#RSS').html(output); // Make sure this ID matches your HTML container
+        },
+        error: function(xhr, status, error) {
+            // there was a problem
+            alert('There was a problem: ' + status + ' ' + error);
+        }
+    });
 });
