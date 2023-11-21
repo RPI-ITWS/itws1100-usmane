@@ -14,3 +14,18 @@ VALUES
    (3, "Al", "Pacino", "1940-04-25"),
    (4, "Jack", "Nicholson", "1937-04-22"),
    (5, "Morgan", "Freeman", "1937-06-01");
+
+CREATE TABLE `relationship` (
+    `actorid` int(10) unsigned NOT NULL,
+    `movieid` int(10) unsigned NOT NULL,
+    PRIMARY KEY (`actorid`, `movieid`),
+    FOREIGN KEY (`actorid`) REFERENCES `actors` (`actorid`),
+    FOREIGN KEY (`movieid`) REFERENCES `movies` (`movieid`)
+);
+
+INSERT INTO `relationship`
+VALUES (1, 1),
+       (2, 2),
+       (3, 3),
+       (4, 4),
+       (5, 5);
