@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>RSS Title</title>
+	<description>This is an example of an RSS feed</description>
+	<link>https://usmanerpi.eastus.cloudapp.azure.com/iit</link>
+	<lastBuildDate>Mon, 26 Sep 2023 00:00:00 +0000</lastBuildDate>
+	<pubDate>Mon, 26 Sep 2023 00:00:00 +0000</pubDate>
+
+ 
+<!-- make sure to fix the links and figure out which link should be where.-->
+
+
+	<item>
+		<title>Team World beats Team Europe to claim back-to-back Laver Cup titles</title>
+		<description>Team World won eight of the nine matches played over three days to cruise to a second win.</description>
+		<link>https://www.tennis.com/news/articles/team-world-beats-team-europe-to-claim-back-to-back-laver-cup-titles</link>
+		<guid>https://www.tennis.com/news/articles/team-world-beats-team-europe-to-claim-back-to-back-laver-cup-titles</guid>
+	    <pubDate>Sun, 25 Sep 2023 00:00:00 +0000</pubDate>
+
+	</item>
+
+	<item>
+		<title>Keonigsegg Gemera Boosts Output to 2300 HP with new optional V8</title>
+		<description>The production version of Koenigsegg's four-seat supercar will offer a 5.0-liter V-8 along with the original three-cylinder powertrain, with both engines mated to a single e-motor.</description>
+		<link>https://www.caranddriver.com/news/a44506609/koenigsegg-gemera-production-v8-details/</link>
+		<guid>https://www.caranddriver.com/news/a44506609/koenigsegg-gemera-production-v8-details/</guid>
+		<pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+	</item>
+ 
+ 	<item>
+		<title>Mars Perseverance rover engineer credits Queens high school</title>
+		<description>Vishnu Sridhar is the lead systems engineer for Perseverance's SuperCam. He grew up in Rego Park, Queens, and attended Aviation High School in Sunnyside.</description>
+		<link>https://www.fox5ny.com/news/mars-perseverance-rover-engineer-credits-queens-high-school</link>
+		<guid>https://www.fox5ny.com/news/mars-perseverance-rover-engineer-credits-queens-high-school</guid>
+	  	<pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<title>Coast Guard arrests a man trying to run a giant hamster wheel across the Atlantic</title>
+		<description>Reza Baluchi was taken in by the U.S. Coast Guard last week while trying to cross the Atlantic in a "hydro pod" made of buoys. Authorities in Flagler County, Fla., responded to Baluchi and his vessel in 2021 and posted photos of his vessel on Facebook.</description>
+		<link>https://www.npr.org/2023/09/07/1198252469/coast-guard-hamster-wheel-reza-baluchi-atlantic-ocean</link>
+		<guid>https://www.npr.org/2023/09/07/1198252469/coast-guard-hamster-wheel-reza-baluchi-atlantic-ocean</guid>
+  	 	<pubDate>Thu, 07 Sep 2023 15:52:00 +0000</pubDate>
+	</item>
+	
+	<item>
+		<title>Sierra Space raises $290 million</title>
+		<description>Sierra Space says a new $290 million funding round will support work on its Dream Chaser vehicles and commercial space station plans. Credit: Sierra Space</description>
+		<link>https://spacenews.com/sierra-space-raises-290-million/</link>
+		<guid>https://spacenews.com/sierra-space-raises-290-million/</guid>
+		<pubDate>Mon, 26 Sep 2023 00:00:00 +0000</pubDate>
+	</item>
+
+</channel>
+</rss>
+

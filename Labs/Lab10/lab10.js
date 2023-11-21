@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Replace this URL with your actual RSS feed URL
-    const rssFeedUrl = 'http://usmanerpi.eastus.cloudapp.azure.com/iit/Labs/Lab04XML/ITWS1100-Lab4-RSS&Atom/ITWS1100-Lab4-RSS&Atom/Intro%20ITWS%20-%20Lab%204%20-%20RSS&Atom%20-%20TemplateRSS.xml'; // Assuming RSS.xml is in the same directory as the HTML file
+    const rssFeedUrl = 'RSS.xml'; // Assuming RSS.xml is in the same directory as the HTML file
 
     // Fetch the RSS feed
     fetch(rssFeedUrl)
