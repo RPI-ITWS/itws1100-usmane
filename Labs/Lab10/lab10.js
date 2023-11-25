@@ -12,7 +12,6 @@ $(document).ready(function() {
             success: function(xml) {
                 var output = '<div>';
                 var items = $(xml).find('item');
-                output += '<ul>';
 
                 items.each(function() {
                     var item = $(this);
@@ -22,7 +21,6 @@ $(document).ready(function() {
                     output += '<a href="' + item.find('link').text() + '">Read More</a></button>';
                     output += '</div>';
                 });
-                output += '</ul>';
                 output += '</div>';
 
                 $(containerId).html(output); // Make sure this ID matches your HTML container
