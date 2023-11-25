@@ -8,12 +8,7 @@ $(document).ready(function() {
         dataType: 'xml',
         success: function(xml) {
             var output = '<div>';
-            var channel = $(xml).find('channel');
-            var items = $(xml).find('item');
 
-            output += '<h2>' + channel.find('title').text() + '</h2>';
-            output += '<p>' + channel.find('description').text() + '</p>';
-            output += '<ul>';
 
             items.each(function() {
                 var item = $(this);
