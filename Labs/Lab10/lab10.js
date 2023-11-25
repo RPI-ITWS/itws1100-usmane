@@ -1,9 +1,7 @@
 $(document).ready(function() {
-    // Replace these URLs with your actual RSS and Atom feed URLs
     const rssFeedUrl = 'RSS.xml';
     const atomFeedUrl = 'ATOM.xml';
 
-    // Function to parse and display a feed
     function displayFeed(feedUrl, containerId) {
         $.ajax({
             type: 'GET',
@@ -22,27 +20,21 @@ $(document).ready(function() {
                     output += '<hr>';
                     output += '<h3>' + entry.find('title').text() + '</h3>';
                     if (entry.find('summary').length > 0) {
-                        output += '<p>' + entry.find('summary').text() + '</p>'; // Atom feed
+                        output += '<p>' + entry.find('summary').text() + '</p>'; 
                     } else {
-                        output += '<p>' + entry.find('description').text() + '</p>'; // RSS feed
+                        output += '<p>' + entry.find('description').text() + '</p>'; 
                     }
-                    output += '<a href="' + entry.find('link').attr('href') + '">Read More</a>'; // Change '.text()' to '.attr('href')'
+                    output += '<a href="' + entry.find('link').attr('href') + '">Read More</a>'; 
                     output += '</div>';
                 });
                 output += '</div>';
 
-                $(containerId).html(output); // Make sure this ID matches your HTML container
+                $(containerId).html(output); 
             },
-            error: function(xhr, status, error) {
-                // there was a problem
-                alert('There was a problem: ' + status + ' ' + error);
-            }
+
         });
     }
 
-    // Display RSS feed
     displayFeed(rssFeedUrl, '#RSS');
-
-    // Display Atom feed
     displayFeed(atomFeedUrl, '#ATOM');
 });
