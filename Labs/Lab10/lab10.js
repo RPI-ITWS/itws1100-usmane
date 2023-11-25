@@ -11,6 +11,9 @@ $(document).ready(function() {
             var channel = $(xml).find('channel');
             var items = $(xml).find('item');
 
+            output += '<h2>' + channel.find('title').text() + '</h2>';
+            output += '<p>' + channel.find('description').text() + '</p>';
+            output += '<ul>';
 
             items.each(function() {
                 var item = $(this);
@@ -18,7 +21,7 @@ $(document).ready(function() {
                 output += '<h3 class="centered">' + item.find('title').text() + '</h3>';
                 output += '<p class="centered">' + item.find('description').text() + '</p>';
                 output += '<div class="mybutton">';
-                output += '<a href="' + item.find('link').text() + '"><button type="button">Read More</button></a>';
+                output += '<button type="button"><a href="' + item.find('link').text() + '">Read More</a></button>';
                 output += '</div>';
             });
 
