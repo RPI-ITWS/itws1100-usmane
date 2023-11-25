@@ -13,7 +13,6 @@ $(document).ready(function() {
 
             output += '<h2>' + channel.find('title').text() + '</h2>';
             output += '<p>' + channel.find('description').text() + '</p>';
-            output += '<a href="' + channel.find('link').text() + '">Visit Website</a>';
             output += '<ul>';
 
             items.each(function() {
