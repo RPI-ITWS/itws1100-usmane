@@ -7,22 +7,23 @@ $(document).ready(function() {
         url: rssFeedUrl,
         dataType: 'xml',
         success: function(xml) {
-            var output = '<ul>';
+            var output = '<div>';
             var items = $(xml).find('item');
+
+            output += '<ul>';
 
             items.each(function() {
                 var item = $(this);
                 output += '<hr>';
-                output += '<li>';
                 output += '<h3 class="centered">' + item.find('title').text() + '</h3>';
                 output += '<p class="centered">' + item.find('description').text() + '</p>';
                 output += '<div class="mybutton">';
                 output += '<button type="button"><a href="' + item.find('link').text() + '">Read More</a></button>';
                 output += '</div>';
-                output += '</li>';
             });
 
             output += '</ul>';
+            output += '</div>';
 
             $('#RSS').html(output); // Make sure this ID matches your HTML container
         },
