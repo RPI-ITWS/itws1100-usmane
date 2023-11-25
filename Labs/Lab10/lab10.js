@@ -11,14 +11,22 @@ $(document).ready(function() {
             dataType: 'xml',
             success: function(xml) {
                 var output = '<div>';
-                var items = $(xml).find('item');
+                var entries = $(xml).find('entry'); // Atom feed
+                if (entries.length === 0) {
+                    entries = $(xml).find('item'); // RSS feed
+                }
 
-                items.each(function() {
-                    var item = $(this);
+                entries.each(function() {
+                    var entry = $(this);
+                    output += '<div>';
                     output += '<hr>';
-                    output += '<h3>' + item.find('title').text() + '</h3>';
-                    output += '<p>' + item.find('description').text() + '</p>';
-                    output += '<a href="' + item.find('link').text() + '">Read More</a></button>';
+                    output += '<h3>' + entry.find('title').text() + '</h3>';
+                    if (entry.find('summary').length > 0) {
+                        output += '<p>' + entry.find('summary').text() + '</p>'; // Atom feed
+                    } else {
+                        output += '<p>' + entry.find('description').text() + '</p>'; // RSS feed
+                    }
+                    output += '<a href="' + entry.find('link').attr('href') + '">Read More</a>'; // Change '.text()' to '.attr('href')'
                     output += '</div>';
                 });
                 output += '</div>';
