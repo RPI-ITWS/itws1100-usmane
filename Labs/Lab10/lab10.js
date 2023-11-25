@@ -36,5 +36,5 @@ $(document).ready(function() {
     displayFeed(rssFeedUrl, '#RSS');
 
     // Display Atom feed
-    displayFeed(atomFeedUrl, '#Atom');
+    displayFeed(atomFeedUrl, '#ATOM');
 });
