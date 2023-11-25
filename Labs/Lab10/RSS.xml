@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-	<title>RSS Title</title>
-	<description>This is an example of an RSS feed</description>
-	<link>https://usmanerpi.eastus.cloudapp.azure.com/iit</link>
-	<lastBuildDate>Mon, 26 Sep 2023 00:00:00 +0000</lastBuildDate>
-	<pubDate>Mon, 26 Sep 2023 00:00:00 +0000</pubDate>
+
 
  
 <!-- make sure to fix the links and figure out which link should be where.-->
