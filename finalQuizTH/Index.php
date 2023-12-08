@@ -15,10 +15,11 @@
     <div class="container">
     <img src="../WebsiteResources/mountainpic.jpeg" alt="Welcome Image" class="image">
     <div class="text">
-      <h1>Welcome to my personal website</h1>
+      <h1>Welcome to my Personal Website</h1>
     </div>
   </div>
 
+    
     <!--maybe include from the footer database? not specified-->
     <!--IF I NEED TO INCLUDE IT FROM THE DATABASE I WILL LATER-->
     <?php 
