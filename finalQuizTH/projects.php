@@ -13,6 +13,9 @@
     <hr>
     <h2 class="centered"><strong>Projects</strong></h2>
 
+    <?php 
+        include('./Includes/footer.inc.php'); 
+    ?>
     
 
 </body>

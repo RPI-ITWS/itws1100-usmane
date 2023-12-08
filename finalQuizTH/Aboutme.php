@@ -13,6 +13,9 @@
     <hr>
 
     
+    <?php 
+        include('./Includes/footer.inc.php'); //footer stuff
+    ?>
 
 </body>
 
