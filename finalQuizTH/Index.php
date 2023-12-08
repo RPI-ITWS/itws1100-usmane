@@ -9,7 +9,9 @@
     <?php
         include('./Includes/header.inc.php'); //has the menu which appears at the top of the page
     ?>
+    <hr>
 
+    
 
 </body>
 
