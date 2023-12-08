@@ -10,8 +10,16 @@
         include('./Includes/header.inc.php'); //has the menu which appears at the top of the page
     ?>
     <hr>
-    
 
+    <!--this is the photo from my main page-->
+    <div class="container">
+    <img src="WebsiteResources/mountainpic.jpeg" alt="Welcome Image" class="image">
+    <div class="text">
+      <h1>Welcome to my personal website</h1>
+    </div>
+  </div>
+
+    <!--maybe include from the footer database? not specified-->
 
 
 </body>
