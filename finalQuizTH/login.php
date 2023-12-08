@@ -27,7 +27,7 @@
         if (password_verify($_POST["pw"], $row["password"])) {
             $_SESSION["loggedin"] = true;
             $_SESSION["userid"] = $row["id"];
-            header("location: ./profile.php");
+            header("location: ./Index.php");
             exit;
         } else {
             echo '<script>alert("Invalid login credentials");</script>';
