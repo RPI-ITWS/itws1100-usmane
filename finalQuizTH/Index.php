@@ -13,7 +13,7 @@
 
     <!--this is the photo from my main page-->
     <div class="container">
-    <img src="WebsiteResources/mountainpic.jpeg" alt="Welcome Image" class="image">
+    <img src="../WebsiteResources/mountainpic.jpeg" alt="Welcome Image" class="image">
     <div class="text">
       <h1>Welcome to my personal website</h1>
     </div>
