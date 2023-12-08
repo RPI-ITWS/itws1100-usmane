@@ -117,11 +117,10 @@ li {
   border-style: solid;
 }
 
-
 .bodyBlock {
   max-width: 600px;
   margin: 20px auto;
-  background-color: #fff;
+  background-color: #333;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -147,15 +146,15 @@ li {
 }
 
 .login .entry_buttons {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #000;
+  color: #333;
   padding: 10px;
   border: none;
   cursor: pointer;
 }
 
 .login .entry_buttons:hover {
-  background-color: #45a049;
+  background-color: #222;
 }
 
 a:hover {
