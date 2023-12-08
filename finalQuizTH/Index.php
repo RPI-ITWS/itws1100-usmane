@@ -1,15 +1,15 @@
 <?php
-  include('includes/htmlTop.inc.php'); // include the DOCTYPE and opening tags
-  include('includes/htmlHead.inc.php'); // HAS THE HEAD WHICH SHOULD HAVE THE CSS
-  include('includes/header.inc.php'); //has the menu which appears at the top of the page
+  include('./includes/htmlTop.inc.php'); // include the DOCTYPE and opening tags
+  include('./includes/htmlHead.inc.php'); // HAS THE HEAD WHICH SHOULD HAVE THE CSS
+  include('./includes/header.inc.php'); //has the menu which appears at the top of the page
 
 ?>
 
 <body>
     <?php
-        include('includes/header.inc.php'); //has the menu which appears at the top of the page
+        include('./includes/header.inc.php'); //has the menu which appears at the top of the page
     ?>
-    <p>POPSOSPAOPSOAPSAS</p>
+
 
 </body>
 
