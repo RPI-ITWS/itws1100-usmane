@@ -1,0 +1,102 @@
+{
+    "books": [
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "plot": "A lawyer in the Depression-era South defends a black man against an undeserved rape charge.",
+        "characters": ["Atticus Finch", "Scout Finch", "Boo Radley"],
+        "type": "Fiction",
+        "img" : "mocking.jpg"
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "plot": "In a dystopian future, a man struggles against a totalitarian government that monitors every aspect of citizens' lives.",
+        "characters": ["Winston Smith", "Big Brother", "Julia"],
+        "type": "Science Fiction",
+        "img" : "1984.jpg"
+
+      },
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "plot": "A man's infatuation with his wealthy neighbor leads to tragedy in 1920s New York.",
+        "characters": ["Jay Gatsby", "Daisy Buchanan", "Nick Carraway"],
+        "type": "Classics",
+        "img" : "ggspy.jpg"
+      },
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "plot": "A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.",
+        "characters": ["Harry Potter", "Hermione Granger", "Ron Weasley"],
+        "type": "Fantasy",
+        "img" : "hp.jpg"
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "plot": "A teenage boy recounts his experiences in New York City and his feelings of alienation.",
+        "characters": ["Holden Caulfield", "Phoebe Caulfield", "Mr. Antolini"],
+        "type": "Fiction",
+        "img" : "rye.jpg"
+      },
+      {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "plot": "A hobbit sets out on a quest to destroy a powerful ring and save Middle-earth from the dark lord Sauron.",
+        "characters": ["Frodo Baggins", "Aragorn", "Gandalf"],
+        "type": "Fantasy",
+        "img" : "lord.jpg"
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "plot": "A hobbit goes on an epic journey to help a group of dwarves reclaim their homeland from a dragon.",
+        "characters": ["Bilbo Baggins", "Thorin Oakenshield", "Smaug"],
+        "type": "Fantasy",
+        "img" : "hobbit.jpg"
+      },
+      {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "plot": "In a dystopian future, a man rebels against a conformist society driven by pleasure and technology.",
+        "characters": ["Bernard Marx", "John the Savage", "Lenina Crowne"],
+        "type": "Science Fiction",
+        "img" : "bravenew.jpg"
+      },
+      {
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "plot": "An ordinary man is swept off Earth just before it's destroyed and embarks on a cosmic adventure.",
+        "characters": ["Arthur Dent", "Ford Prefect", "Zaphod Beeblebrox"],
+        "type": "Science Fiction",
+        "img" : "hitch.jpg"
+      },
+      {
+        "title": "The Shining",
+        "author": "Stephen King",
+        "plot": "A family's winter stay at an isolated hotel becomes increasingly terrifying as supernatural forces take hold.",
+        "characters": ["Jack Torrance", "Wendy Torrance", "Danny Torrance"],
+        "type": "Horror",
+        "img" : "shining.jpg"
+      },
+      {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "plot": "A symbologist tries to unravel a mystery that involves secret societies, hidden messages, and religious history.",
+        "characters": ["Robert Langdon", "Sophie Neveu", "Sir Leigh Teabing"],
+        "type": "Mystery",
+        "img" : "davinci.jpg"
+      },
+      {
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "plot": "A journalist and a hacker investigate a wealthy family's dark secrets in Sweden.",
+        "characters": ["Mikael Blomkvist", "Lisbeth Salander", "Henrik Vanger"],
+        "type": "Mystery",
+        "img" : "tat.jpg"
+      }
+    ]
+  }
+  
