@@ -15,7 +15,7 @@
     session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        require __DIR__ . '/../Components/Scripts/db.php';
+        require __DIR__ . './Includes/database.php';
 
         $statement = $db->prepare("SELECT `id`, `password` from `users` WHERE `username`=? OR `email`=?;");
         $statement->bind_param("ss", $_POST["user"], $_POST["user"]);
