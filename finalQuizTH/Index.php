@@ -20,8 +20,10 @@
   </div>
 
     <!--maybe include from the footer database? not specified-->
-
-
+    <!--IF I NEED TO INCLUDE IT FROM THE DATABASE I WILL LATER-->
+    <?php 
+        include('./Includes/footer.inc.php'); 
+    ?>
 </body>
 
 </html>
