@@ -41,13 +41,13 @@
     ?>
 
     <div class="bodyBlock">
-    <h2>Login / Create Account</h2>
+    <h2>Login</h2>
     <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);">
         <fieldset id="old_acc">
-        <legend>Already have an account? Login!</legend>
+        <legend>Welcome to the page!</legend>
         <div class="login">
 
-            <label class="field" for="user">Username or Email</label>
+            <label class="field" for="user">Username</label>
             <div class="value"><input type="text" size="60" value="" name="user" id="user" autofocus value="<?php if (array_key_exists("user", $_POST)) echo htmlspecialchars($_POST["user"]); ?>"/></div>
 
             <label class="field" for="pw">Password</label>
@@ -56,7 +56,6 @@
             <input type="submit" value="Log In" class="entry_buttons" id="login" name="login" />
         </div>
         </fieldset>
-        <a href="./create.php">Don't have an account? Create one</a>
     </form>
     </div>
     <?php 
