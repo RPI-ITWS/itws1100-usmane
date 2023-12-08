@@ -1,0 +1,77 @@
+{
+    "movies": [
+      {
+        "title": "The Shawshank Redemption",
+        "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "characters": ["Andy Dufresne", "Ellis Boyd 'Red' Redding"],
+        "cinematography": "Stunning visuals capturing the essence of prison life.",
+        "acting": "Outstanding performances by Tim Robbins and Morgan Freeman.",
+        "type": "Drama",
+        "img" : "shawshank.jpg"
+      },
+      {
+        "title": "The Godfather",
+        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+        "characters": ["Don Vito Corleone", "Michael Corleone"],
+        "cinematography": "Classic cinematography creating a dark and atmospheric tone.",
+        "acting": "Iconic performances by Marlon Brando and Al Pacino.",
+        "type": "Crime",
+        "img" : "godfather.jpg"
+      },
+      {
+        "title": "Inception",
+        "plot": "A thief who enters the dreams of others to steal their secrets must plant an idea into someone's mind.",
+        "characters": ["Dom Cobb", "Ariadne", "Robert Fischer"],
+        "cinematography": "Mind-bending visuals and innovative cinematography.",
+        "acting": "Strong performances by Leonardo DiCaprio and the ensemble cast.",
+        "type": "Sci-Fi",
+        "img" : "inception.jpg"
+      },
+      {
+        "title": "The Dark Knight",
+        "plot": "Batman must confront the mysterious and sadistic criminal known as the Joker.",
+        "characters": ["Batman", "Joker", "Harvey Dent"],
+        "cinematography": "Gritty and visually striking cinematography.",
+        "acting": "Heath Ledger's iconic portrayal of the Joker.",
+        "type": "Action",
+        "img" : "darkknight.jpg"
+      },
+      {
+        "title": "The Matrix",
+        "plot": "A computer hacker learns about the true nature of his reality and his role in the war against the controllers of it.",
+        "characters": ["Neo", "Morpheus", "Trinity"],
+        "cinematography": "Groundbreaking visual effects and action sequences.",
+        "acting": "Keanu Reeves' iconic portrayal of Neo.",
+        "type": "Sci-Fi",
+        "img" : "matrix.jpg"
+      },
+      {
+        "title": "Jurassic Park",
+        "plot": "A theme park featuring genetically engineered dinosaurs suffers a breakdown, and the dinosaurs go on the rampage.",
+        "characters": ["Dr. Alan Grant", "John Hammond", "Ian Malcolm"],
+        "cinematography": "Revolutionary use of CGI in creating realistic dinosaurs.",
+        "acting": "Sam Neill and Jeff Goldblum deliver strong performances.",
+        "type": "Adventure",
+        "img" : "jpark.jpg"
+      },
+      {
+        "title": "Forrest Gump",
+        "plot": "A man with a low IQ witnesses and unwittingly influences several defining historical events in the 20th century USA.",
+        "characters": ["Forrest Gump", "Jenny Curran", "Lieutenant Dan"],
+        "cinematography": "Visually compelling sequences blending fiction with historical footage.",
+        "acting": "Tom Hanks delivers a heartfelt performance.",
+        "type": "Drama",
+        "img" : "gump.jpg"
+      },
+      {
+        "title": "Pulp Fiction",
+        "plot": "Interwoven stories of Los Angeles mobsters, fringe players, small-time criminals, and a mysterious briefcase.",
+        "characters": ["Vincent Vega", "Jules Winnfield", "Mia Wallace"],
+        "cinematography": "Quentin Tarantino's signature nonlinear storytelling with stylized visuals.",
+        "acting": "Memorable performances by John Travolta, Samuel L. Jackson, and Uma Thurman.",
+        "type": "Crime",
+        "img" : "pulpfiction.jpg"
+      }
+    ]
+  }
+  
