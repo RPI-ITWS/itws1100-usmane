@@ -9,6 +9,7 @@
     <?php
         include('includes/header.inc.php'); //has the menu which appears at the top of the page
     ?>
+    <p>POPSOSPAOPSOAPSAS</p>
 
 </body>
 
