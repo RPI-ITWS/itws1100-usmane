@@ -53,6 +53,13 @@
             <label class="field" for="pw">Password</label>
             <div class="value"><input type="password" size="60" value="" name="pw" id="pw" /></div>
 
+            <label class="field" for="pw">Name</label>
+            <div class="value"><input type="password" size="60" value="" name="pw" id="pw" /></div>
+
+            <label class="field" for="pw">Type (user or admin)</label>
+            <div class="value"><input type="password" size="60" value="" name="pw" id="pw" /></div>
+
+
             <input type="submit" value="Log In" class="entry_buttons" id="login" name="login" />
         </div>
         </fieldset>
