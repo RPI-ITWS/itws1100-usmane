@@ -1,5 +1,5 @@
 <?php
-include('./conn.php'); 
+include('./Includes/conn.php'); 
 
 $query = "SELECT footer_name, email, phoneNumber, LinkedinLink, GithubLink FROM myFooter";
 $result = mysqli_query($db, $query);
