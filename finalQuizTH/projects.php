@@ -8,20 +8,23 @@
 
 <body>
     <?php
-        include('./Includes/header.inc.php'); //has the menu which appears at the top of the page
+        include('./Includes/header.inc.php'); 
     ?>
     <hr>
     <h2 class="centered"><strong>Projects</strong></h2>
+    <hr>
+
+    <!--we need to implement form here for adding a thing if the user is logged in and is an admin-->
+    
+
 
     <?php
-    // Assuming you have already established a database connection
     include('./Includes/conn.php'); 
 
     $query = "SELECT lab_name, lab_description, lab_link FROM myLabs";
     $result = $db->query($query);
 
     if ($result->num_rows > 0) {
-        // Output data of each row
         while($row = $result->fetch_assoc()) {
             echo "<h2>" . $row["lab_name"] . "</h2>";
             echo "<p>" . $row["lab_description"] . "</p>";
@@ -32,7 +35,7 @@
         echo "No projects found in the database.";
     }
 
-    // Close the database connection
+
     $db->close();
 ?>
     

@@ -22,7 +22,11 @@ CREATE TABLE myProjects (
 
 CREATE TABLE myFooter (
     footer_id SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    footer_content TEXT
+    footer_name VARCHAR(255),
+    email VARCHAR(255),
+    phoneNumber VARCHAR(255),
+    LinkedinLink VARCHAR(255),
+    GithubLink VARCHAR(255)
 );
 
 CREATE TABLE mySiteUsers (
@@ -45,3 +49,6 @@ VALUES
     ('Lab09', 'movies...', '../Labs/Lab09/ITWS1100-Lab9-PHP/inclassexample/index.php'),
     ('Lab10', 'movies also...', '../Labs/Lab10/lab10.html');
 
+INSERT INTO myFooter (footer_name, email, phoneNumber, LinkedinLink, GithubLink)
+VALUES
+    ('Emmanuel Usman', 'mailto:Emmanuelusman2004@gmail.com','+1 (929) 434-8166', 'https://www.linkedin.com/in/Emmanuelusman2004', 'https://github.com/Emmanuelusman2004');
