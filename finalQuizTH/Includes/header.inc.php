@@ -10,7 +10,7 @@
 
     <?php
     // Assuming you have a variable $loggedIn that indicates whether the user is logged in or not
-    include('./conn.php');
+    include('./Includes/conn.php');
     session_start();
     if(!isset($_SESSION['name'])) {
       $_SESSION['name']='User';
