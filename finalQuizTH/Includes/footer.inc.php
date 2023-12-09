@@ -2,7 +2,7 @@
 include('./conn.php'); 
 
 $query = "SELECT footer_name, email, phoneNumber, LinkedinLink, GithubLink FROM myFooter";
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($db, $query);
 
 if ($result) {
     $row = mysqli_fetch_assoc($result);
