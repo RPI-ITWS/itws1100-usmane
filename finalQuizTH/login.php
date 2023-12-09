@@ -12,7 +12,7 @@
     <hr>
 
     <?php
-        include('./Includes/conn.php');
+        
 
 
         
