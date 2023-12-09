@@ -19,7 +19,7 @@
     $_SESSION['name']='Admin';
     
 
-    if ($loggedIn == "Admin") {
+    if ($_SESSION['name'] == "Admin") {
         ?>
         <div id="mybutton" style="text-align: right;">
             <a href="./Index.php" onclick="logoutAction();"><button type="button">Log out</button></a>
