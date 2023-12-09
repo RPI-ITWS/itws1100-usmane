@@ -13,6 +13,30 @@
     <hr>
     <h2 class="centered"><strong>Projects</strong></h2>
 
+    <?php
+    // Assuming you have already established a database connection
+    include('./Includes/conn.php'); 
+
+    $query = "SELECT lab_name, lab_description, lab_link FROM myLabs";
+    $result = $db->query($query);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "<h2>" . $row["lab_name"] . "</h2>";
+            echo "<p>" . $row["lab_description"] . "</p>";
+            echo '<a href="' . $row["lab_link"] . '">View Project</a>';
+            echo "<hr>";
+        }
+    } else {
+        echo "No projects found in the database.";
+    }
+
+    // Close the database connection
+    $db->close();
+?>
+    
+
     <?php 
         include('./Includes/footer.inc.php'); 
     ?>
