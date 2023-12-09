@@ -15,8 +15,8 @@ if ($result) {
     echo ' GitHub: <a href="' . $row['GithubLink'] . '" target="_blank">' . $row['GithubLink'] . '</a></p>';
     echo '</div>';
 } else {
-    echo 'Error: ' . mysqli_error($conn);
+    echo 'Error: ' . mysqli_error($db);
 }
 
-mysqli_close($conn);
+mysqli_close($db);
 ?>
