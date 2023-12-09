@@ -15,8 +15,7 @@
     if(!isset($_SESSION['name'])) {
       $_SESSION['name']='User';
     }
-    
-    $_SESSION['name']='Admin';
+
     
 
     if ($_SESSION['name'] == "Admin") {
