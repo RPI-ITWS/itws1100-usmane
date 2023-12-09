@@ -12,32 +12,7 @@
     <hr>
 
     <?php
-    session_start();
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        require __DIR__ . './Includes/database.php';
-
-        $statement = $db->prepare("SELECT `id`, `password` from `users` WHERE `username`=? OR `email`=?;");
-        $statement->bind_param("ss", $_POST["user"], $_POST["user"]);
-        $statement->execute();
-        $result = $statement->get_result();
         
-        if ($result->num_rows) {
-        $row = $result->fetch_assoc();
-        if (password_verify($_POST["pw"], $row["password"])) {
-            $_SESSION["loggedin"] = true;
-            $_SESSION["userid"] = $row["id"];
-            header("location: ./Index.php");
-            exit;
-        } else {
-            echo '<script>alert("Invalid login credentials");</script>';
-        }
-        } else {
-        echo '<script>alert("Invalid login credentials");</script>';
-        }
-
-        $db->close();
-    }
     ?>
 
     <div class="bodyBlock">
