@@ -15,7 +15,7 @@
     if ($loggedIn == "Admin") {
         ?>
         <div id="mybutton" style="text-align: right;">
-            <a href="./logout.php"><button type="button">Log out</button></a>
+            <a href="./Index.php"><button type="button">Log out</button></a>
         </div>
         <?php
     } else {
