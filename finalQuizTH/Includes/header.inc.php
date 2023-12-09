@@ -7,8 +7,23 @@
       <li style="display: inline-block;"><a href="#contact"><button type="button">Contact</button></a></li>
       <li style="display: inline-block;"><a href="./FinalProject/Pages/home.php"><button type="button">My Final Project</button></a></li>
     </ul>
-    <div id = "mybutton" style="text-align: right;">
-        <a href="./login.php"><button type="button">Login</button></a>
-    </div>
 
+    <?php
+    // Assuming you have a variable $loggedIn that indicates whether the user is logged in or not
+    $loggedIn = "Admin";
+
+    if ($loggedIn == "Admin") {
+        ?>
+        <div id="mybutton" style="text-align: right;">
+            <a href="./logout.php"><button type="button">Log out</button></a>
+        </div>
+        <?php
+    } else {
+        ?>
+        <div id="mybutton" style="text-align: right;">
+            <a href="./login.php"><button type="button">Login</button></a>
+        </div>
+        <?php
+    }
+    ?>
   </div>
